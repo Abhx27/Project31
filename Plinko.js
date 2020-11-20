@@ -1,7 +1,7 @@
 class Plinko{
     constructor(){
 var options = {
-    
+    density:1.0
 }
     this.body = Bodies.circle(x,y,this.releaseEvents,options);
     World.add(world, this.body); 
