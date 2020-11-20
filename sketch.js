@@ -1,6 +1,14 @@
+const Engine = Matter.Engine;
+const World= Matter.World;
+const Bodies = Matter.Bodies;
+const Constraint = Matter.Constraint;
 var ground,columms1,columms2,columms3,columms4,columms5;
 function setup() {
   createCanvas(480,800);
+
+  engine = Engine.create();
+world = engine.world;
+
    groundSprite = createSprite(240,795,480,10);
   groundSprite.shapeColor=color(178, 178, 178)
 
@@ -29,4 +37,3 @@ function draw() {
   background(0,0,0);  
   drawSprites();
 }
-//250,795,267,5
